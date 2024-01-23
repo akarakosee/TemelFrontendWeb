@@ -1,0 +1,170 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.yemek img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+
+/*site navigation menüsü*/
+.site-nav {
+    background: #444;
+}
+
+.site-nav a {
+    color: white !important;
+    text-decoration: none;
+    /* alt çizgiyi yok eder*/
+    padding: 15px 15px;
+    /* soldan sağa hareket*/
+    display: inline-block;
+}
+
+.site-nav a.secili {
+    background: #125466;
+}
+
+/*banner bölümü*/
+.banner {
+    padding: 30px 0;
+    background-color: #125466;
+    color: white !important;
+    text-align: center;
+}
+
+.banner-baslik {
+    font-size: 80px;
+    font-weight: normal !important;
+    margin-bottom: 0;
+    margin-top: 20;
+}
+
+.banner-slogan {
+    font-size: 20px;
+    font-style: italic !important;
+    font-weight: normal;
+}
+
+/*Yemekler*/
+
+.yemekler {
+    padding: 40px 0;
+    background: #fafafa;
+    border-bottom: 1px solid #ddd;
+}
+
+.yemek {
+    float: left;
+    width: 49%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.yemek+.yemek {
+    margin-left: 2%;
+}
+
+/*sipariş*/
+.siparis {
+    padding: 30px 0;
+    color: #666;
+}
+
+.siparis-baslik {
+    font: size 24px;
+    text-align: center;
+    text-transform: uppercase !important;
+}
+
+/*site sonu*/
+
+.site-sonu {
+    padding: 20px 0;
+    color: #777;
+    background-color: #444;
+    text-align: center !important;
+    font-size: 80%;
+}
+
+/*form bolumu*/
+.form-bolumu{margin-bottom: 15px;
+}
+.saga-dayali{
+    text-align: right !important;
+}
+.form-sol{
+    width: 40%;
+    float: left !important;
+}
+.form-sag{
+    width: 60%;
+    float: left !important;
+}
+
+.form-sol label{padding-right: 15px;
+}
+
+input, textarea{
+    border-radius: 0;
+    border: 1px solid #ccc; 
+    padding: 10px 15px;
+}
+
+[type="text"],
+[type="number"],
+textarea{
+    width: 100%;
+}
+
+.kapsayici{
+    width: 90%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button{
+    border-width: 0;
+    background-color: gray;
+    border-radius: 20%;
+    padding: 10px 15px;
+    color: white;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}
+
+.siparis-button{
+    background: crimson !important;
+}
+.yemek h2 {
+    text-align: center;
+}
+.yemek figcaption {
+    text-align: center;
+    font-size: 20px;
+}
